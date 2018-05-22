@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"golang.org/x/oauth2/jws"
+	"github.com/iampeter/oauth2/jws"
 )
 
 func TestJWTAccessTokenSourceFromJSON(t *testing.T) {

@@ -175,7 +175,8 @@ func providerAuthHeaderWorks(tokenURL string) bool {
 }
 
 func RetrieveToken(ctx context.Context, clientID, clientSecret, tokenURL string, v url.Values) (*Token, error) {
-	bustedAuth := !providerAuthHeaderWorks(tokenURL)
+	//bustedAuth := !providerAuthHeaderWorks(tokenURL)
+	bustedAuth := true
 	if bustedAuth {
 		if clientID != "" {
 			v.Set("client_id", clientID)
